@@ -4,8 +4,8 @@
  </head>
  <body>
  <?php 
-   while (list($var,$value) = each ($_SERVER)) {
-      echo "<h1>$var</h1> <p>$value</p>";
+   foreach ($_SERVER as $i => $arg) {
+      echo "<h1>$i</h1> <p>$arg</p>";
    }
 
 ?>

@@ -76,7 +76,7 @@ jobs:
         with:
           context: .
           push: ${{ github.event_name != 'pull_request' }}
-          tags: ${{ steps.meta.outputs.tags }}, ghcr.io/darkcheyenne/ip.eberli.me:${{ env.VERSION }}
+          tags: ${{ steps.meta.outputs.tags }}, ghcr.io/darkcheyenne/header.eberli.me:${{ env.VERSION }}
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
